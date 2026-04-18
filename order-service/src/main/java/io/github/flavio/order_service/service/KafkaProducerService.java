@@ -12,7 +12,7 @@ public class KafkaProducerService {
     }
 
     public void sendOrderCreatedEvent(OrderCreatedEvent event) {
-        kafkaTemplate.send("order-created-topic", event);
+        kafkaTemplate.send("order-created", event);
     }
     
 }
